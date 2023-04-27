@@ -6,14 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Repo</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            margin: 20px;
+            border: 2px solid green;
+            padding: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset{
+            width: 200px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>This is my first repository. in the image branch</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio inventore quibusdam quia illum quo ducimus officia dolorem veritatis qui pariatur perspiciatis, porro aspernatur assumenda iure magni voluptatem nesciunt dicta illo dolores ab a eaque ipsa debitis tempora. Veritatis error porro distinctio, harum, voluptatem, consequuntur quaerat impedit voluptates recusandae facere nam!</p>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="media.html">Media</a>
+                    <ul class="dropdown">
+                        <li><a href="">Home</a></li>
+                        <li><a href="media.html">Media</a>
+                            <ul class="dropdown">
+                                <li><a href="index.html">Form</a></li>
+                                <li><a href="">Home</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Home</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Form</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <img src="../images/nature-wallpaper18.jpg" alt="This is a wallpaper">
+        <form>
+            <label for="name">Your Name
+                <input type="text" id="name" placeholder="Your Name">
+            </label>
+            <label for="email">Your Email
+                <input type="email" id="email" placeholder="Your Email">
+            </label>
+            <label for="phone">Your Phone Number
+                <input type="number" id="phone" placeholder="Your Phone Number">
+            </label>
+            <fieldset>
+                <legend>Pick one Pitha</legend>
+                <label for="chitoi">
+                    <input type="radio" id="chitoi" name="pitha">Chitoi
+                </label>
+                <label for="vapa">
+                    <input type="radio" id="vapa" name="pitha">Vapa
+                </label>
+                <label for="chapri">
+                    <input type="radio" id="chapri" name="pitha">Chapri
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select one or more vortas</legend>
+                <label for="sorisa">
+                    <input type="checkbox" name="vorta" id="sorisa">Sorisa
+                </label>
+                <label for="shutki">
+                    <input type="checkbox" name="vorta" id="shutki">Shutki
+                </label>
+                <label for="dal">
+                    <input type="checkbox" name="vorta" id="dal">Dal
+                </label>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            
+        </form>
+
+        
+        
+        
     </main>
     
 </body>
